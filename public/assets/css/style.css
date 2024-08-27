@@ -60,6 +60,12 @@ html {
     background-color: var(--third-color);
     border-radius: 0;
 }
+.navbar-custom .btn-login:hover {
+    color: white;
+    background-color: var(--third-color);
+    opacity: 0.5;
+    border-radius: 0;
+}
 
 .navbar-logo {
     height: 60px;
@@ -184,9 +190,9 @@ html {
     }
 }
 
-@media (min-width: 1200px) and (max-width: 1440px) {
+@media (min-width: 1200px) {
     .fixed-text h1 {
-        font-size: 8vw;
+        font-size: 7vw;
     }
     .fixed-text .middle-fixed-text {
         margin-left: 1.8em;
