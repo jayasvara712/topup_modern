@@ -1,0 +1,70 @@
+/* Custom icons using background images */
+.icon-best-seller {
+    background-image: url(/assets/img/icons/best_seller_icon.png);
+}
+.icon-buy-now {
+    background-image: url(/assets/img/icons/buy_now_icon.png);
+}
+.icon-card {
+    background-image: url(/assets/img/icons/card_icon.png);
+}
+.icon-cart {
+    background-image: url(/assets/img/icons/cart_icon.png);
+}
+.icon-currency {
+    background-image: url(/assets/img/icons/currency_icon.png);
+}
+.icon-customer-service {
+    background-image: url(/assets/img/icons/customer_service_icon.png);
+}
+.icon-discount {
+    background-image: url(/assets/img/icons/discount_icon.png);
+}
+.icon-facebook {
+    background-image: url(/assets/img/icons/facebook_icon.png);
+}
+.icon-games {
+    background-image: url(/assets/img/icons/games_icon.png);
+}
+.icon-timer {
+    background-image: url(/assets/img/icons/timer_icon.png);
+}
+.icon-instagram {
+    background-image: url(/assets/img/icons/instagram_icon.png);
+}
+.icon-instant-delivery {
+    background-image: url(/assets/img/icons/instant_delivery_icon.png);
+}
+.icon-live-chat {
+    background-image: url(/assets/img/icons/live_chat_icon.png);
+}
+.icon-login {
+    background-image: url(/assets/img/icons/login_icon.png);
+}
+.icon-menu {
+    background-image: url(/assets/img/icons/menu_icon.png);
+}
+.icon-order {
+    background-image: url(/assets/img/icons/order_icon.png);
+}
+.icon-razer {
+    background-image: url(/assets/img/icons/razer_icon.png);
+}
+.icon-search {
+    background-image: url(/assets/img/icons/search_icon.png);
+}
+.icon-dropdown {
+    background-image: url(/assets/img/icons/dropdown_icon.png);
+}
+.icon-trust {
+    background-image: url(/assets/img/icons/trust_icon.png);
+}
+.icon-uid {
+    background-image: url(/assets/img/icons/uid_icon.png);
+}
+.icon-whatsapp {
+    background-image: url(/assets/img/icons/whatsapp_icon.png);
+}
+.icon-youtube {
+    background-image: url(/assets/img/icons/youtube_icon.png);
+}
