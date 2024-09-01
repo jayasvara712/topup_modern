@@ -37,147 +37,250 @@
     {{-- end Flash Sale Section --}}
 
     <!-- Order Tracking -->
-    <div class="p-4 container">
+    <div class="container mt-5">
         <h1>Order <span class="half-title-color">Tracking</span><i class="icons title icon-order"></i></h1>
         <form action="#" method="POST" class="row form-tracking">
-            <div class="col-lg-12">
+            <div class="col-12 col-md-12">
                 <p>To track your order, please enter your Order Number* and your Email Address that was used for your
                     purchase below.</p>
                 <p>*Your Order Number can be found in the confirmation Email that was sent to you / in our Thank You Page.
                 </p>
             </div>
-            <div class="col-lg-5">
+            <div class="col-12 col-md-5">
                 <input type="text" class="form-control" name="no_invoice" placeholder="Order Number / Invoice">
             </div>
-            <div class="col-lg-5">
+            <div class="col-12 col-md-5">
                 <input type="email" class="form-control" name="email" placeholder="Email Address">
             </div>
-            <div class="col-lg-2">
+            <div class="col-12 col-md-2">
                 <button class="btn" type="submit">Track Order</button>
             </div>
         </form>
     </div>
     {{-- end order tracking --}}
 
-    <!-- Categories Section -->
+    <!-- Products Section -->
     <div class="container mt-5">
         <h1>Our <span class="half-title-color">Product</span><i class="icons title icon-games"></i></h1>
-        <div class="row">
-            <div class="col-12">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <div class="category-buttons-container">
-                        <a href="#" class="btn category-btn active"><i class="icons icon-games"></i>All Games</a>
-                        <a href="#" class="btn category-btn"><i class="icons icon-best-seller"></i>Best Seller</a>
-                        <a href="#" class="btn category-btn"><i class="icons icon-login"></i>Via Login</a>
-                        <a href="#" class="btn category-btn"><i class="icons icon-uid"></i>Via UID</a>
-                        <a href="#" class="btn category-btn"><i class="icons icon-razer"></i>Link Razer</a>
-                        <a href="#" class="btn category-btn"><i class="icons icon-card"></i>Gift Card</a>
-                        <!-- Add more buttons as needed -->
-                    </div><button class="btn live-chat-button"><i class="icons icon-live-chat"></i>Live Chat</button>
+        <!-- Scrollable Nav Tabs -->
+        <div class="d-flex justify-content-between align-items-center mb-4 categories">
+            <div class="scrollable-tabs-container">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true"><i
+                                class="icons icon-games"></i>All Games</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                            role="tab" aria-controls="razer" aria-selected="false"><i
+                                class="icons icon-best-seller"></i>Best Seller</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                            role="tab" aria-controls="razer" aria-selected="false"><i class="icons icon-login"></i>Via
+                            Login</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="razer" aria-selected="false"><i
+                                class="icons icon-uid"></i>Via UID</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="razer-tab" data-bs-toggle="tab" data-bs-target="#razer"
+                            type="button" role="tab" aria-controls="razer" aria-selected="false"><i
+                                class="icons icon-razer"></i>Link
+                            Razer</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="razer" aria-selected="false"><i
+                                class="icons icon-card"></i>Gift Card</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="btn-chat">
+                <button class="btn live-chat-button"><i class="icons icon-live-chat"></i>Live Chat</button>
+                <small>Check our Stock to our Custommer Service</small>
+            </div>
+        </div>
+
+        <!-- Content Sections -->
+        <div class="tab-content mt-4" id="myTabContent">
+            <!-- Home Content -->
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="row">
+                    <!-- Product Card 1 -->
+                    <div class="col-4 col-md-2 mb-4">
+                        <a href="#">
+                            <div class="card product-card">
+                                <div class="card-image">
+                                    <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">8 Ball Pool</div>
+                                    <div class="card-delivery"><i class="icons icon-instant-delivery"></i> Instant
+                                        Delivery</div>
+                                    <div class="card-stock">Ready Stock <div class="indicator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 mb-4">
+                        <a href="#">
+                            <div class="card product-card">
+                                <div class="card-image">
+                                    <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">8 Ball Pool</div>
+                                    <div class="card-delivery"><i class="icons icon-instant-delivery"></i> Instant
+                                        Delivery</div>
+                                    <div class="card-stock">Ready Stock <div class="indicator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 mb-4">
+                        <a href="#">
+                            <div class="card product-card">
+                                <div class="card-image">
+                                    <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">8 Ball Pool</div>
+                                    <div class="card-delivery"><i class="icons icon-instant-delivery"></i> Instant
+                                        Delivery</div>
+                                    <div class="card-stock">Ready Stock <div class="indicator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 mb-4">
+                        <a href="#">
+                            <div class="card product-card">
+                                <div class="card-image">
+                                    <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">8 Ball Pool</div>
+                                    <div class="card-delivery"><i class="icons icon-instant-delivery"></i> Instant
+                                        Delivery</div>
+                                    <div class="card-stock">Ready Stock <div class="indicator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 mb-4">
+                        <a href="#">
+                            <div class="card product-card">
+                                <div class="card-image">
+                                    <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">8 Ball Pool</div>
+                                    <div class="card-delivery"><i class="icons icon-instant-delivery"></i> Instant
+                                        Delivery</div>
+                                    <div class="card-stock">Ready Stock <div class="indicator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 mb-4">
+                        <a href="#">
+                            <div class="card product-card">
+                                <div class="card-image">
+                                    <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">8 Ball Pool</div>
+                                    <div class="card-delivery"><i class="icons icon-instant-delivery"></i> Instant
+                                        Delivery</div>
+                                    <div class="card-stock">Ready Stock <div class="indicator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-4 col-md-2 mb-4">
+                        <a href="#">
+                            <div class="card product-card">
+                                <div class="card-image">
+                                    <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
+                                </div>
+                                <div class="card-body">
+                                    <div class="card-title">8 Ball Pool</div>
+                                    <div class="card-delivery"><i class="icons icon-instant-delivery"></i> Instant
+                                        Delivery</div>
+                                    <div class="card-stock">Ready Stock <div class="indicator"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- Repeat for more products -->
                 </div>
             </div>
-        </div>
 
-    </div>
-
-    <!-- Products Section -->
-    <div class="container">
-        <div class="row">
-            <!-- Product Card 1 -->
-            <div class="col-4 col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="/detail">
-                    <div class="card product-card">
-                        <div class="card-image">
-                            <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
-                        </div>
-                        <div class="card-body">
-                            <p class="card-title">8 Ball Pool</p>
-                            <p class="card-delivery"><i class="icons icon-instant-delivery"></i> Instant Delivery</p>
-                            <p class="card-stock">Ready Stock</p>
-                        </div>
+            <!-- Razer Content -->
+            <div class="tab-pane fade razer-form" id="razer" role="tabpanel" aria-labelledby="razer-tab">
+                <form id="razer-form">
+                    <h1>Razer <span class="half-title-color">Link</span><i class="icons title icon-razer"></i></h1>
+                    <div class="mt-3 mb-3">
+                        <input type="text" class="form-control" id="link-razer" name="link-razer"
+                            placeholder="Put link razer here">
                     </div>
-                </a>
+                    <div class="form-button">
+                        <button type="submit" class="btn btn-submit">Submit</button>
+                    </div>
+                </form>
+
+                <div class="table-responsive mt-3">
+                    <table class="table table-bg-transparent">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Link Razer</th>
+                                <th>Currency</th>
+                                <th>Input Time</th>
+                                <th>Status</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>https:razer.com/lorem5d2d2d2d2d2</td>
+                                <td>Rp.100.000</td>
+                                <td>27/08/2024 14:23:32</td>
+                                <td>Expired</td>
+                                <td><i class="icons icon-trash"></i></td>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>https:razer.com/lorem5d2d2d2d2d2</td>
+                                <td>Rp.150.000</td>
+                                <td>27/08/2024 14:23:32</td>
+                                <td>Expired</td>
+                                <td><i class="icons icon-trash"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="button-container" mt-5">
+                    <button type="submit" class="btn btn-submit"><i class="icons icon-cart"></i>Cart</button>
+                    <button type="submit" class="btn btn-submit">Buy Now</button>
+                </div>
+
             </div>
-            <!-- Repeat for more products -->
         </div>
     </div>
+
     {{-- end product --}}
-
-    {{-- about us --}}
-    <div class="p-4 container">
-        <div class="about-us">
-            <div class="header">
-                <img src="assets/img/logo.png" class="logo">
-                <p>Gaming is an exciting form of digital entertainment and a thriving marketplace for digital products.
-                    As
-                    gamers
-                    ourselves, we understand the importance of finding ways to recharge our favorite games at a cheaper
-                    price
-                    using
-                    legal methods. This allows us to save money and purchase even more packages to become top players in
-                    the
-                    games
-                    we love. That’s why Burpigames is here to provide a solution, using our experience and expertise to
-                    offer a
-                    24/7
-                    recharge service for all of your gaming needs.</p>
-            </div>
-            <h2>Why should you buy at <span class="half-title-color">Burpi Games</span></h2>
-            <div class="row p-5">
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="assets/img/icons/discount_icon.png" class="" alt="...">
-                        </div>
-                        <div class="col-lg-9">
-                            <h5>Bigger Discount</h5>
-                            <p>Get more for your money with Burpi Games. We offer the biggest
-                                discounts on game credit top-ups, so you can save money while enjoying more of your
-                                favourite games.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="assets/img/icons/discount_icon.png" class="" alt="...">
-                        </div>
-                        <div class="col-lg-9">
-                            <h5>Bigger Discount</h5>
-                            <p>Get more for your money with Burpi Games. We offer the biggest
-                                discounts on game credit top-ups, so you can save money while enjoying more of your
-                                favourite games.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="assets/img/icons/discount_icon.png" class="" alt="...">
-                        </div>
-                        <div class="col-lg-9">
-                            <h5>Bigger Discount</h5>
-                            <p>Get more for your money with Burpi Games. We offer the biggest
-                                discounts on game credit top-ups, so you can save money while enjoying more of your
-                                favourite games.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="row">
-                        <div class="col-lg-3">
-                            <img src="assets/img/icons/discount_icon.png" class="" alt="...">
-                        </div>
-                        <div class="col-lg-9">
-                            <h5>Bigger Discount</h5>
-                            <p>Get more for your money with Burpi Games. We offer the biggest
-                                discounts on game credit top-ups, so you can save money while enjoying more of your
-                                favourite games.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- end about us --}}
 @endsection
