@@ -29,3 +29,14 @@ document.querySelectorAll(".category-btn").forEach((button) => {
         this.classList.add("active");
     });
 });
+
+// select product
+function selectProduct(card) {
+    // Remove the 'selected' class from all cards
+    document.querySelectorAll(".card").forEach(function (c) {
+        c.classList.remove("selected");
+    });
+
+    // Add the 'selected' class to the clicked card
+    card.classList.add("selected");
+}

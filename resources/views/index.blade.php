@@ -1,7 +1,7 @@
 @extends('layouts.template')
 @section('content')
     <!-- Banner Section -->
-    <div class="pt-5 mt-5 banner-section">
+    <div class="section banner-section mt-5">
         <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -37,7 +37,7 @@
     {{-- end Flash Sale Section --}}
 
     <!-- Order Tracking -->
-    <div class="container mt-5">
+    <div class="container section">
         <h1>Order <span class="half-title-color">Tracking</span><i class="icons title icon-order"></i></h1>
         <form action="#" method="POST" class="row form-tracking">
             <div class="col-12 col-md-12">
@@ -60,7 +60,7 @@
     {{-- end order tracking --}}
 
     <!-- Products Section -->
-    <div class="container mt-5">
+    <div class="container section">
         <h1>Our <span class="half-title-color">Product</span><i class="icons title icon-games"></i></h1>
         <!-- Scrollable Nav Tabs -->
         <div class="d-flex justify-content-between align-items-center mb-4 categories">
@@ -112,7 +112,7 @@
                 <div class="row">
                     <!-- Product Card 1 -->
                     <div class="col-4 col-md-2 mb-4">
-                        <a href="#">
+                        <a href="/detail">
                             <div class="card product-card">
                                 <div class="card-image">
                                     <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
@@ -128,7 +128,7 @@
                         </a>
                     </div>
                     <div class="col-4 col-md-2 mb-4">
-                        <a href="#">
+                        <a href="/detail">
                             <div class="card product-card">
                                 <div class="card-image">
                                     <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
@@ -144,7 +144,7 @@
                         </a>
                     </div>
                     <div class="col-4 col-md-2 mb-4">
-                        <a href="#">
+                        <a href="/detail">
                             <div class="card product-card">
                                 <div class="card-image">
                                     <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
@@ -160,7 +160,7 @@
                         </a>
                     </div>
                     <div class="col-4 col-md-2 mb-4">
-                        <a href="#">
+                        <a href="/detail">
                             <div class="card product-card">
                                 <div class="card-image">
                                     <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
@@ -176,7 +176,7 @@
                         </a>
                     </div>
                     <div class="col-4 col-md-2 mb-4">
-                        <a href="#">
+                        <a href="/detail">
                             <div class="card product-card">
                                 <div class="card-image">
                                     <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
@@ -192,7 +192,7 @@
                         </a>
                     </div>
                     <div class="col-4 col-md-2 mb-4">
-                        <a href="#">
+                        <a href="/detail">
                             <div class="card product-card">
                                 <div class="card-image">
                                     <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
@@ -208,7 +208,7 @@
                         </a>
                     </div>
                     <div class="col-4 col-md-2 mb-4">
-                        <a href="#">
+                        <a href="/detail">
                             <div class="card product-card">
                                 <div class="card-image">
                                     <img src="assets/img/products/8-ball-pool.png" class="card-img-top" alt="...">
@@ -274,13 +274,16 @@
                     </table>
                 </div>
                 <div class="button-container" mt-5">
-                    <button type="submit" class="btn btn-submit"><i class="icons icon-cart"></i>Cart</button>
-                    <button type="submit" class="btn btn-submit">Buy Now</button>
+                    <button type="button" class="btn btn-submit" data-bs-toggle="modal"
+                        data-bs-target="#purchaseModal"><i class="icons icon-cart"></i>Cart</button>
+                    <button type="button" class="btn btn-submit" data-bs-toggle="modal"
+                        data-bs-target="#purchaseModal">
+                        Buy Now
+                    </button>
                 </div>
 
             </div>
         </div>
     </div>
-
     {{-- end product --}}
 @endsection

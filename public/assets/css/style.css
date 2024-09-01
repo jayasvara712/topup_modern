@@ -46,6 +46,10 @@ html {
     background-color: var(--body-color) !important;
 }
 
+.section {
+    padding: 100px 50px 50px 50px;
+}
+
 .icons {
     display: inline-block;
     width: 20px; /* Adjust size */
@@ -68,6 +72,13 @@ html {
 .btn-submit {
     color: var(--text-color) !important;
     background-color: var(--second-color) !important;
+    padding: 5px;
+    width: auto !important;
+    border-radius: 10px !important;
+}
+.btn-cancel {
+    color: var(--text-color) !important;
+    background-color: var(--first-color) !important;
     padding: 5px;
     width: auto !important;
     border-radius: 10px !important;
@@ -381,6 +392,185 @@ html {
 }
 /* end product */
 
+/* detail product */
+.product-image .card {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(/assets/img/products/badlander.png); /* Background image */
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.product-image .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(22, 29, 44, 0.5) 100%,
+        rgba(22, 29, 44, 1) 100%
+    );
+    z-index: 1;
+}
+
+/* Centered Image */
+.product-image .card-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.product-image .card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text Box on Top Left */
+.product-image .text-box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 15px;
+    left: 15px;
+    background-color: var(--third-color); /* Semi-transparent background */
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    z-index: 2;
+}
+
+/* Text Below the Image */
+.product-image .card-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    z-index: 2;
+}
+
+/* Card Container */
+.product-option.card {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    background-color: var(--third-color);
+}
+
+.product-option.card.selected {
+    border-color: var(--second-color); /* Color of the border when selected */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Header */
+.product-option .card-header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--second-color);
+}
+
+.product-option .card-header .title {
+    flex: 1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-option .card-header .image {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-left: 15px;
+}
+
+.product-option .card-header .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Card Footer */
+.product-option .card-footer {
+    padding: 10px;
+    text-align: right;
+    border-top: 1px solid var(--second-color);
+    font-size: 4px;
+    color: var(--text-color);
+}
+
+.product-option .card-footer span {
+    display: block; /* Each span takes a new line */
+}
+
+.product-option .card-footer .price {
+    .discount {
+        background-color: var(--second-color);
+        padding: 3px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.product-detail form {
+    div {
+        padding: 10px;
+    }
+    label {
+        font-size: 16px;
+    }
+    input,
+    input:focus,
+    select,
+    select:focus {
+        background-color: var(--first-color);
+        color: var(--text-color);
+        border: 0;
+        padding: 10px;
+    }
+}
+.product-detail .instruction {
+    padding: 10px;
+    h5 {
+        text-align: center;
+        font-size: 24px;
+    }
+    li {
+        font-size: 15px;
+    }
+    p {
+        width: 300px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .helper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+/* end detail product */
+
 /* razer form */
 .razer-form {
     background-color: var(--third-color);
@@ -419,13 +609,12 @@ html {
     }
 }
 
-.razer-form .button-container {
+.button-container {
     display: flex;
     justify-content: flex-end; /* Align buttons to the right */
     margin-top: 20px; /* Space above the buttons */
 }
-
-.razer-form .button-container .btn {
+.button-container .btn {
     margin-left: 10px; /* Space between the buttons */
     padding: 10px 20px; /* Adjust padding as needed */
     font-size: 16px; /* Adjust font size as needed */
@@ -597,3 +786,37 @@ html {
     }
 }
 /* end footer */
+
+/* modal confirmation */
+.modal-confirmation {
+    color: var(--text-color);
+    .modal-header {
+        background-color: var(--first-color);
+        border-bottom: 0;
+    }
+    .modal-footer {
+        border-top: 0;
+        display: inline;
+        button {
+            width: 100% !important;
+        }
+    }
+    .modal-content {
+        background-color: #1e1e1e;
+    }
+    hr {
+        border-top: var(--second-color) solid;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+    .order-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px; /* Space between items */
+    }
+}
+.modal-confirmation .modal-title {
+    text-align: center;
+    width: 100%;
+}
+/* end modal confirmation */

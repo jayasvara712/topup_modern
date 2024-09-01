@@ -54,7 +54,7 @@
     @yield('content')
 
     {{-- about us --}}
-    <div class="p-4 container">
+    <div class="container section">
         <div class="about-us">
             <div class="header">
                 <img src="assets/img/logo.png" class="logo">
@@ -133,7 +133,7 @@
 
     {{-- footer --}}
     <!-- Footer Section -->
-    <footer class="footer-section">
+    <footer class="section footer-section">
         <div class="container">
             <div class="row">
                 <!-- Payment Methods Column -->
@@ -182,8 +182,70 @@
             </div>
         </div>
     </footer>
-
     {{-- end footer --}}
+
+    {{-- modal confirmation --}}
+    <!-- Purchase Confirmation Modal -->
+    <div class="modal fade modal-confirmation" id="purchaseModal" tabindex="-1"
+        aria-labelledby="purchaseModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="purchaseModalLabel">Order Detail</h5>
+                </div>
+                <div class="modal-body ">
+                    <!-- Purchase Details -->
+                    <div class="order-item">
+                        <span>ID Game:</span>
+                        <span>512121841</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Server Game:</span>
+                        <span>SEA Region</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Email:</span>
+                        <span>feb@gmail.com</span>
+                    </div>
+                    <div class="order-item">
+                        <span>whatsapp:</span>
+                        <span>-</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Item Name:</span>
+                        <span>Valorant Vspan</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Price:</span>
+                        <span>RP.100.000</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Discount:</span>
+                        <span>-</span>
+                    </div>
+                    <hr>
+                    <div class="order-item">
+                        <span>Total Price:</span>
+                        <span>RP.100.000</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+                        <div class="col-lg-6">
+                            <button type="button" class="btn btn-submit">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- end modal confirmation --}}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
