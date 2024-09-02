@@ -31,6 +31,41 @@
                 <button type="button" data-bs-target="#bannerCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             </div>
         </div>
+        <div id="bannerCarouselMobile" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-image">
+                        <img src="assets/img/banner1.webp" class="d-block" alt="Banner Image 1">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/img/banner2.webp" class="d-block" alt="Banner Image 2">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/img/banner3.webp" class="d-block" alt="Banner Image 3">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="assets/img/banner1.webp" class="d-block" alt="Banner Image 4">
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#bannerCarouselMobile" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#bannerCarouselMobile" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#bannerCarouselMobile" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#bannerCarouselMobile" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+        </div>
+    </div>
     </div>
 
     {{-- flash sale --}}
@@ -72,13 +107,14 @@
                                 class="icons icon-games"></i>All Games</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                            role="tab" aria-controls="razer" aria-selected="false"><i
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="razer" aria-selected="false"><i
                                 class="icons icon-best-seller"></i>Best Seller</button>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
-                            role="tab" aria-controls="razer" aria-selected="false"><i class="icons icon-login"></i>Via
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="razer" aria-selected="false"><i
+                                class="icons icon-login"></i>Via
                             Login</button>
                     </li>
                     <li class="nav-item" role="presentation">

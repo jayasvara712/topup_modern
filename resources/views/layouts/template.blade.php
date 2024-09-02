@@ -70,7 +70,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icons icon-cart"></i>&nbsp;</a>
+                        <a class="nav-link" href="/cart"><i class="icons icon-cart"></i>&nbsp;</a>
                     </li>
                     <li class="nav-item">
                         <button class="btn btn-login">Login</button>

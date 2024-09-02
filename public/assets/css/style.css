@@ -198,9 +198,8 @@ a {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
     overflow: hidden;
-    background-image: url(/assets/img/bg/background1.jpeg); /* Replace with your background image path */
+    background-image: url(/assets/img/bg/background1.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -218,6 +217,17 @@ a {
         rgba(22, 29, 44, 1) 100%
     );
     z-index: 1;
+}
+
+@media (min-width: 769px) {
+    #bannerCarouselMobile {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    #bannerCarousel {
+        display: none;
+    }
 }
 
 .carousel-inner {
@@ -238,17 +248,19 @@ a {
 }
 
 .carousel-image img {
-    width: auto;
-    height: 19em;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: 15px;
 }
 
 .carousel-indicators {
     position: inherit !important;
-    margin: 0;
+    margin: 10px;
     z-index: 2;
     margin-right: 0;
+    justify-content: center;
+    height: 100%;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -264,7 +276,6 @@ a {
 .carousel-indicators .active {
     background-color: var(--second-color) !important;
 }
-/* end slider */
 
 /* flash sale */
 
@@ -355,7 +366,7 @@ a {
     display: flex !important;
     align-items: center;
     justify-content: center;
-    width: 160px;
+    width: 200px;
     border-radius: 10px;
 }
 
