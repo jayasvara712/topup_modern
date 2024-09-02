@@ -46,6 +46,10 @@ html {
     background-color: var(--body-color) !important;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .section {
     padding: 100px 50px 50px 50px;
 }
@@ -84,29 +88,49 @@ html {
     border-radius: 10px !important;
 }
 
+/* navbar */
+/* styles.css */
 .navbar-custom {
     background-color: var(--first-color);
     height: 80px;
 }
-.navbar-custom .navbar-brand,
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .navbar-logo {
+    height: 60px;
+}
+
+.navbar-custom .navbar-nav {
+    margin-left: auto;
+}
+
 .navbar-custom .nav-link {
     display: flex;
     align-items: center;
     color: var(--text-color);
+    margin: 0 10px;
 }
+
 .navbar-custom .nav-link.active,
 .navbar-custom .nav-link.show {
     color: var(--text-color) !important;
 }
+
 .navbar-custom .nav-link:hover {
     color: #ccc;
 }
+
 .navbar-custom .btn-login {
     color: var(--second-color);
     background-color: var(--third-color);
     border-radius: 10px;
     width: 160px;
 }
+
 .navbar-custom .btn-login:hover {
     color: var(--second-color);
     background-color: var(--body-color);
@@ -114,9 +138,58 @@ html {
     border-radius: 10px;
 }
 
-.navbar-logo {
-    height: 60px;
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background-color: var(--first-color);
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
 }
+
+.sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 0;
+}
+
+.sidebar.show {
+    transform: translateX(0);
+}
+
+.sidebar .dropdown-menu {
+    background-color: transparent !important;
+}
+
+.sidebar .dropdown-item {
+    color: var(--text-color);
+    border-bottom: 1px solid var(--second-color);
+}
+
+/* Ensure sidebar is hidden on large screens */
+@media (min-width: 992px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+/* Button to trigger sidebar */
+.btn-outline-dark {
+    border-color: white;
+    color: white;
+}
+
+.btn-outline-dark:hover {
+    background-color: white;
+    color: var(--first-color);
+}
+
+/* end navbar */
 
 /* banner */
 .banner-section {
@@ -549,6 +622,11 @@ html {
         padding: 10px;
     }
 }
+@media (max-width: 768px) {
+    .product-detail .categories {
+        margin-top: 20px;
+    }
+}
 .product-detail .instruction {
     padding: 10px;
     h5 {
@@ -570,6 +648,157 @@ html {
     }
 }
 /* end detail product */
+
+/* order detail */
+.detail_order {
+    background-color: var(--third-color);
+    border: 1px solid var(--second-color);
+    border-radius: 10px;
+    font-size: 36px;
+    @media (max-width: 768px) {
+        font-size: 26px;
+    }
+    font-weight: 700;
+    text-align: center;
+    padding: 10px;
+}
+
+.detail_order .list-item {
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+    font-weight: 400;
+    border: 1px solid var(--second-color);
+    background-color: var(--first-color);
+    border-radius: 10px;
+    .title {
+        border: 1px solid var(--second-color);
+        text-align: right;
+        padding: 5px;
+    }
+    .description {
+        border: 1px solid var(--second-color);
+        text-align: left;
+        padding: 5px;
+    }
+}
+.btn-cart {
+    border: 0;
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    .btn-cancel {
+        width: 160px !important;
+    }
+}
+
+.detail_order .description {
+    font-size: 14px;
+}
+.detail_order .total-price {
+    padding-top: 100px;
+    font-size: 20px;
+    text-align: left;
+}
+.order-desc {
+    border: 1px solid var(--second-color);
+    border-radius: 10px;
+    margin-top: 30px !important;
+    padding: 10px;
+    background-color: var(--first-color);
+    .title {
+        font-size: 20px;
+        text-align: left;
+    }
+    .heading {
+        font-size: 14px;
+        color: var(--second-color);
+    }
+    .text {
+        color: var(--text-color);
+        font-size: 12px;
+        font-weight: 400;
+    }
+    hr {
+        border: 1px solid var(--second-color);
+        height: 2px;
+        margin: 10px 0 10px 0;
+    }
+}
+.payment-method {
+    margin-top: 50px !important;
+    padding: 10px;
+    background-color: var(--first-color);
+
+    .payment-box {
+        border: 1px solid var(--second-color);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .header {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .img-payment {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .btn-pay {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding: 20px;
+
+        .btn-cancel {
+            display: flex;
+            align-items: center;
+            background-color: var(--third-color) !important;
+            font-size: 14px;
+            padding: 10px;
+        }
+    }
+}
+.btn-order {
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    .btn-submit {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+    }
+}
+.btn-view-more,
+.btn-view-more:hover {
+    background-color: transparent; /* Bootstrap primary color or any color you prefer */
+    color: var(--text-color) !important;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .btn-view-more {
+        font-size: 12px;
+    }
+}
+/* end order detail */
 
 /* razer form */
 .razer-form {
@@ -799,6 +1028,9 @@ html {
         display: inline;
         button {
             width: 100% !important;
+        }
+        .col-12 {
+            padding: 5px;
         }
     }
     .modal-content {

@@ -19,3 +19,12 @@ Route::get('/', function () {
 Route::get('/detail', function () {
     return view('detail_product');
 });
+Route::get('/detail_order', function () {
+    return view('detail_order');
+});
+Route::get('/cart', function () {
+    return view('cart');
+});
+Route::get('/payment', function () {
+    return view('payment');
+});

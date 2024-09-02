@@ -13,13 +13,42 @@
 </head>
 
 <body>
+    <!-- Sidebar -->
+    <div class="sidebar text-light mt-5 d-lg-none" id="sidebar">
+        <ul class="navbar-nav">
+            <li class="nav-item mt-2">
+                <a class="nav-link" href="/"><i class="icons icon-menu"></i> Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="icons icon-order"></i> Track Order</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" aria-expanded="false">
+                    <i class="icons icon-currency"></i>IDR
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li><a class="dropdown-item" href="#">USD</a></li>
+                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                    <li><a class="dropdown-item" href="#">IDR</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/cart"><i class="icons icon-cart"></i>Cart</a>
+            </li>
+            <li class="nav-item">
+                <button class="btn btn-login">Login</button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="assets/img/logo.png" class="navbar-logo"
+            <a class="navbar-brand" href="/"><img src="assets/img/logo.png" class="navbar-logo"
                     alt="Logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="btn d-lg-none d-flex align-items-center ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false">
+                <i class="icons icon-menu"></i>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
@@ -27,7 +56,7 @@
                         <a class="nav-link" href="#"><i class="icons icon-order"></i> Track Order</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icons icon-menu"></i> Home</a>
+                        <a class="nav-link" href="/"><i class="icons icon-menu"></i> Home</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -231,11 +260,12 @@
                 </div>
                 <div class="modal-footer">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-12 col-lg-6">
                             <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
                         </div>
-                        <div class="col-lg-6">
-                            <button type="button" class="btn btn-submit">Confirm</button>
+                        <div class="col-12 col-lg-6">
+                            <a href="/detail_order"><button type="button"
+                                    class="btn btn-submit">Confirm</button></a>
                         </div>
                     </div>
                 </div>
