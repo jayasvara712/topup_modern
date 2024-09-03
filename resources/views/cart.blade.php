@@ -48,8 +48,8 @@
                 </div>
             </div>
             <div class="btn-cart">
-                <button class="btn btn-cancel">
-                    <i class="icons icon-trash"> Cancel</i>
+                <button class="btn btn-cancel d-flex align-items-center justify-content-center">
+                    <i class="icons icon-trash"></i> Cancel
                 </button>
             </div>
             <div class="col-12 list-item">
@@ -95,8 +95,8 @@
                 </div>
             </div>
             <div class="btn-cart">
-                <button class="btn btn-cancel">
-                    <i class="icons icon-trash"> Cancel</i>
+                <button class="btn btn-cancel d-flex align-items-center justify-content-center">
+                    <i class="icons icon-trash"></i> Cancel
                 </button>
             </div>
             <div class="total-price">
