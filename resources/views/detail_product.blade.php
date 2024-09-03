@@ -56,7 +56,7 @@
                                     <div class="card-header">
                                         <div class="title">375 <br> Valorant Point (VP)</div>
                                         <div class="image">
-                                            <img src="https://via.placeholder.com/100" alt="Product Image">
+                                            <img src="/assets/img/icon-vp-point.png" alt="Product Image">
                                         </div>
                                     </div>
 
@@ -73,7 +73,7 @@
                                     <div class="card-header">
                                         <div class="title">180 <br> Valorant Point (VP)</div>
                                         <div class="image">
-                                            <img src="https://via.placeholder.com/100" alt="Product Image">
+                                            <img src="/assets/img/icon-vp-point.png" alt="Product Image">
                                         </div>
                                     </div>
 
@@ -93,7 +93,7 @@
                                     <div class="card-header">
                                         <div class="title">180 <br> Valorant Point (VP)</div>
                                         <div class="image">
-                                            <img src="https://via.placeholder.com/100" alt="Product Image">
+                                            <img src="/assets/img/icon-vp-point.png" alt="Product Image">
                                         </div>
                                     </div>
 
@@ -113,7 +113,7 @@
                                     <div class="card-header">
                                         <div class="title">180 <br> Valorant Point (VP)</div>
                                         <div class="image">
-                                            <img src="https://via.placeholder.com/100" alt="Product Image">
+                                            <img src="/assets/img/icon-vp-point.png" alt="Product Image">
                                         </div>
                                     </div>
 
@@ -129,64 +129,6 @@
                             </div>
                             <!-- Repeat for more products -->
                         </div>
-                    </div>
-
-                    <!-- Razer Content -->
-                    <div class="tab-pane fade razer-form" id="razer" role="tabpanel" aria-labelledby="razer-tab">
-                        <form id="razer-form">
-                            <h1>Razer <span class="half-title-color">Link</span><i class="icons title icon-razer"></i>
-                            </h1>
-                            <div class="mt-3 mb-3">
-                                <input type="text" class="form-control" id="link-razer" name="link-razer"
-                                    placeholder="Put link razer here">
-                            </div>
-                            <div class="form-button">
-                                <button type="submit" class="btn btn-submit">Submit</button>
-                            </div>
-                        </form>
-
-                        <div class="table-responsive mt-3">
-                            <table class="table table-bg-transparent">
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th>Link Razer</th>
-                                        <th>Currency</th>
-                                        <th>Input Time</th>
-                                        <th>Status</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>https:razer.com/lorem5d2d2d2d2d2</td>
-                                        <td>Rp.100.000</td>
-                                        <td>27/08/2024 14:23:32</td>
-                                        <td>Expired</td>
-                                        <td><i class="icons icon-trash"></i></td>
-                                    </tr>
-                                <tbody>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>https:razer.com/lorem5d2d2d2d2d2</td>
-                                        <td>Rp.150.000</td>
-                                        <td>27/08/2024 14:23:32</td>
-                                        <td>Expired</td>
-                                        <td><i class="icons icon-trash"></i></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="button-container" mt-5">
-                            <button type="button" class="btn btn-submit" data-bs-toggle="modal"
-                                data-bs-target="#purchaseModal"><i class="icons icon-cart"></i>Cart</button>
-                            <button type="button" class="btn btn-submit" data-bs-toggle="modal"
-                                data-bs-target="#purchaseModal">
-                                Buy Now
-                            </button>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -219,12 +161,12 @@
                     <div class="col-12 col-md-6">
                         <div class="button-container" mt-5">
                             <button type="button" class="btn btn-submit" data-bs-toggle="modal"
-                                data-bs-target="#purchaseModal"><i class="icons icon-cart"></i>Cart</button>
+                                data-bs-target="#purchaseModal"><i class="icons icon-cart-white"></i>Cart</button>
                             <button type="button" class="btn btn-submit" data-bs-toggle="modal"
                                 data-bs-target="#purchaseModal">
                                 Buy Now
                             </button>
-                            <button type="button" class="btn btn-submit"><i class="icons icon-live-chat"></i>Live
+                            <button type="button" class="btn btn-submit"><i class="icons icon-live-chat-white"></i>Live
                                 Chat</button>
                         </div>
                         <div class="instruction">

@@ -16,7 +16,11 @@
     <!-- Sidebar -->
     <div class="sidebar text-light mt-5 d-lg-none" id="sidebar">
         <ul class="navbar-nav">
-            <li class="nav-item mt-2">
+            <li class="nav-item mt-4 mb-2">
+                <button type="button" class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal"><i
+                        class="icons icon-login"></i> Login</button>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="/"><i class="icons icon-menu"></i> Home</a>
             </li>
             <li class="nav-item">
@@ -35,13 +39,10 @@
             <li class="nav-item">
                 <a class="nav-link" href="/cart"><i class="icons icon-cart"></i>Cart</a>
             </li>
-            <li class="nav-item">
-                <button class="btn btn-login">Login</button>
-            </li>
         </ul>
     </div>
 
-    <!-- Main Content -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
             <a class="navbar-brand" href="/"><img src="assets/img/logo.png" class="navbar-logo"
@@ -73,7 +74,8 @@
                         <a class="nav-link" href="/cart"><i class="icons icon-cart"></i>&nbsp;</a>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-login">Login</button>
+                        <button type="button" class="btn btn-login" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
                     </li>
                 </ul>
             </div>
@@ -274,10 +276,46 @@
     </div>
     {{-- end modal confirmation --}}
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
+    <!-- Purchase Login Modal -->
+    <div class="modal fade modal-login" id="loginModal" tabindex="-1" aria-labelledby="purchaseModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Login <span class="half-title-color">Account</span></h2>
+                </div>
+                <div class="modal-body ">
+                    <form action="#">
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="text" name="" id="" class="form-control"
+                                    placeholder="username">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" name="" id="" class="form-control"
+                                    placeholder="password">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="modal-footer">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a href="/"><button type="button" class="btn btn-submit">Confirm</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- end modal login --}}
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/script.js"></script>
 </body>
 
 </html>

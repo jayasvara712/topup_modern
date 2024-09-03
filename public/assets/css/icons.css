@@ -11,6 +11,9 @@
 .icon-cart {
     background-image: url(/assets/img/icons/cart_icon.png);
 }
+.icon-cart-white {
+    background-image: url(/assets/img/icons/cart_white_icon.png);
+}
 .icon-currency {
     background-image: url(/assets/img/icons/currency_icon.png);
 }
@@ -37,6 +40,9 @@
 }
 .icon-live-chat {
     background-image: url(/assets/img/icons/live_chat_icon.png);
+}
+.icon-live-chat-white {
+    background-image: url(/assets/img/icons/live_chat_white_icon.png);
 }
 .icon-login {
     background-image: url(/assets/img/icons/login_icon.png);
@@ -67,4 +73,7 @@
 }
 .icon-youtube {
     background-image: url(/assets/img/icons/youtube_icon.png);
+}
+.icon-trash {
+    background-image: url(/assets/img/icons/trash_icon.png);
 }
