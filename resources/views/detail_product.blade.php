@@ -1,6 +1,6 @@
 @extends('layouts.template')
 @section('content')
-    <div class="container section">
+    <div class="container section mt-5">
         <div class="row product-detail">
             <div class="col-12 col-md-4 product-image">
                 <div class="card">

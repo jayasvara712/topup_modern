@@ -28,12 +28,11 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" aria-expanded="false">
-                    <i class="icons icon-currency"></i>IDR
+                    <i class="icons icon-currency" id="currencyIcons"></i><span id="currencyText">IDR</span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <li><a class="dropdown-item" href="#">USD</a></li>
-                    <li><a class="dropdown-item" href="#">EUR</a></li>
-                    <li><a class="dropdown-item" href="#">IDR</a></li>
+                    <li><a class="dropdown-item" href="#" data-currency="SGD">SGD</a></li>
+                    <li><a class="dropdown-item" href="#" data-currency="IDR">IDR</a></li>
                 </ul>
             </li>
             <li class="nav-item">
@@ -59,15 +58,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/"><i class="icons icon-menu"></i> Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    <li class="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="icons icon-currency"></i> IDR
+                            <i class="icons icon-currency" id="currencyIcons"></i> <span id="currencyText">IDR</span>
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">USD</a></li>
-                            <li><a class="dropdown-item" href="#">EUR</a></li>
-                            <li><a class="dropdown-item" href="#">IDR</a></li>
+                        <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
+                            <li>
+                                <a class="dropdown-item" href="#" data-currency="IDR"><i
+                                        class="icons icon-currency"></i> SGD </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#" data-currency="IDR"><i
+                                        class="icons icon-currency"></i> IDR </a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -191,6 +195,11 @@
                 <!-- User Support Column -->
                 <div class="col-12 col-md-4 footer-column">
                     <h4 class="footer-title"><span class="footer-title-bar">&nbsp;</span>User Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#trackingModal">Track Order</a>
+                        </li>
+                    </ul>
                     <div class="user-support">
                         <a href="#" class="btn support-btn"><i class="icons icon-whatsapp"></i>
                             WhatsApp IDN</a>
@@ -277,7 +286,7 @@
     {{-- end modal confirmation --}}
 
     <!-- Purchase Login Modal -->
-    <div class="modal fade modal-login" id="loginModal" tabindex="-1" aria-labelledby="purchaseModalLabel"
+    <div class="modal fade modal-login" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -310,12 +319,57 @@
                 </div>
             </div>
         </div>
-        {{-- end modal login --}}
+    </div>
+    {{-- end modal login --}}
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/script.js"></script>
+    <!-- Order Tracking Modal -->
+    <div class="modal fade modal-tracking" id="trackingModal" tabindex="-1" aria-labelledby="trackingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Order <span class="half-title-color">Tracking</span><i class="icons title icon-order"></i>
+                    </h1>
+                </div>
+                <div class="modal-body ">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-12 col-md-12">
+                                <p>To track your order, please enter your Order Number* and your Email Address that was
+                                    used
+                                    for your
+                                    purchase below.</p>
+                                <p>*Your Order Number can be found in the confirmation Email that was sent to you / in
+                                    our
+                                    Thank You
+                                    Page.
+                                </p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="text" class="form-control" name="no_invoice"
+                                    placeholder="Order Number / Invoice">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <input type="email" class="form-control" name="email"
+                                    placeholder="Email Address">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="col-12 col-md-2">
+                                <button class="btn" type="submit">Track Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- end Order Tracking login --}}
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

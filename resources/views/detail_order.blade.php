@@ -1,6 +1,6 @@
 @extends('layouts.template')
 @section('content')
-    <div class="container section">
+    <div class="container section mt-5">
         <div class="row detail_order">
             <div class="col-12 order-title">
                 Detail Order <span class="half-title-color">Confirmation</span>

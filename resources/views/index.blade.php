@@ -71,34 +71,11 @@
     {{-- flash sale --}}
     {{-- end Flash Sale Section --}}
 
-    <!-- Order Tracking -->
-    <div class="container section">
-        <h1>Order <span class="half-title-color">Tracking</span><i class="icons title icon-order"></i></h1>
-        <form action="#" method="POST" class="row form-tracking">
-            <div class="col-12 col-md-12">
-                <p>To track your order, please enter your Order Number* and your Email Address that was used for your
-                    purchase below.</p>
-                <p>*Your Order Number can be found in the confirmation Email that was sent to you / in our Thank You Page.
-                </p>
-            </div>
-            <div class="col-12 col-md-5">
-                <input type="text" class="form-control" name="no_invoice" placeholder="Order Number / Invoice">
-            </div>
-            <div class="col-12 col-md-5">
-                <input type="email" class="form-control" name="email" placeholder="Email Address">
-            </div>
-            <div class="col-12 col-md-2">
-                <button class="btn" type="submit">Track Order</button>
-            </div>
-        </form>
-    </div>
-    {{-- end order tracking --}}
-
     <!-- Products Section -->
     <div class="container section">
         <h1>Our <span class="half-title-color">Product</span><i class="icons title icon-games"></i></h1>
         <!-- Scrollable Nav Tabs -->
-        <div class="d-flex justify-content-between align-items-center mb-4 categories">
+        <div class="d-flex align-items-center mb-4 categories">
             <div class="scrollable-tabs-container">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -134,10 +111,6 @@
                                 class="icons icon-card"></i>Gift Card</button>
                     </li>
                 </ul>
-            </div>
-            <div class="btn-chat">
-                <button class="btn live-chat-button"><i class="icons icon-live-chat"></i>Live Chat</button>
-                <small>Check our Stock to our Custommer Service</small>
             </div>
         </div>
 

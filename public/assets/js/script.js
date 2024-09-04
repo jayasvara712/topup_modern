@@ -89,3 +89,25 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    var currencyDropdown = document.getElementById("currencyDropdown");
+    var currencyText = document.getElementById("currencyText");
+    var currencyIcon = document.getElementById("currencyIcon");
+
+    var dropdownItems = document.querySelectorAll(
+        ".dropdown-menu .dropdown-item"
+    );
+    dropdownItems.forEach(function (item) {
+        item.addEventListener("click", function () {
+            var selectedCurrency = this.getAttribute("data-currency");
+            if (selectedCurrency === "SGD") {
+                currencyText.textContent = "SGD"; // Dollar icon
+                currencyIcon.className = "icons icon-currency"; // Dollar icon
+            } else if (selectedCurrency === "IDR") {
+                currencyText.textContent = "IDR"; // Rupiah icon
+                currencyIcon.className = "icons icon-currency"; // Rupiah icon
+            }
+        });
+    });
+});
