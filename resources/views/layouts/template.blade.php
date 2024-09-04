@@ -23,9 +23,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/"><i class="icons icon-menu"></i> Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"><i class="icons icon-order"></i> Track Order</a>
-            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" aria-expanded="false">
                     <i class="icons icon-currency" id="currencyIconSidebar"></i><span
@@ -53,9 +50,6 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="icons icon-order"></i> Track Order</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/"><i class="icons icon-menu"></i> Home</a>
                     </li>

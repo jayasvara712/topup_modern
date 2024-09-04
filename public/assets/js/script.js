@@ -87,11 +87,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 currencyTextSidebar.textContent = "SGD"; // Dollar icon
                 currencyIcon.className = "icons icon-currency"; // Dollar icon
                 currencyIconSidebar.className = "icons icon-currency"; // Dollar icon
+                price.textContent = "SGD";
             } else if (selectedCurrency === "IDR") {
                 currencyText.textContent = "IDR"; // Rupiah icon
                 currencyTextSidebar.textContent = "IDR"; // Rupiah icon
                 currencyIcon.className = "icons icon-currency"; // Rupiah icon
                 currencyIconSidebar.className = "icons icon-currency"; // Rupiah icon
+                price.textContent = "IDR";
             }
         });
     });
