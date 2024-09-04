@@ -67,46 +67,31 @@ document.querySelectorAll(".nav-item.dropdown").forEach(function (dropdown) {
     });
 });
 
-// view more function
-document.addEventListener("DOMContentLoaded", (event) => {
-    const viewMoreButton = document.getElementById("view-more-btn");
-    const moreItems = document.getElementById("more-items");
-    const allItems = document.getElementById("list-item");
-    console.log("test" + allItems.length);
-
-    // Check if more than 2 items are present
-    if (allItems.length > 2) {
-        viewMoreButton.classList.remove("d-none"); // Show the button
-    }
-
-    viewMoreButton.addEventListener("click", () => {
-        if (moreItems.classList.contains("d-none")) {
-            moreItems.classList.remove("d-none");
-            viewMoreButton.textContent = "View Less"; // Change button text
-        } else {
-            moreItems.classList.add("d-none");
-            viewMoreButton.textContent = "View More"; // Change button text
-        }
-    });
-});
-
+// currency
 document.addEventListener("DOMContentLoaded", function () {
     var currencyDropdown = document.getElementById("currencyDropdown");
     var currencyText = document.getElementById("currencyText");
     var currencyIcon = document.getElementById("currencyIcon");
-
+    var currencyTextSidebar = document.getElementById("currencyTextSidebar");
+    var currencyIconSidebar = document.getElementById("currencyIconSidebar");
+    var currentScreen = window.innerWidth;
     var dropdownItems = document.querySelectorAll(
         ".dropdown-menu .dropdown-item"
     );
+
     dropdownItems.forEach(function (item) {
         item.addEventListener("click", function () {
             var selectedCurrency = this.getAttribute("data-currency");
             if (selectedCurrency === "SGD") {
                 currencyText.textContent = "SGD"; // Dollar icon
+                currencyTextSidebar.textContent = "SGD"; // Dollar icon
                 currencyIcon.className = "icons icon-currency"; // Dollar icon
+                currencyIconSidebar.className = "icons icon-currency"; // Dollar icon
             } else if (selectedCurrency === "IDR") {
                 currencyText.textContent = "IDR"; // Rupiah icon
+                currencyTextSidebar.textContent = "IDR"; // Rupiah icon
                 currencyIcon.className = "icons icon-currency"; // Rupiah icon
+                currencyIconSidebar.className = "icons icon-currency"; // Rupiah icon
             }
         });
     });

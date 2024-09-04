@@ -28,7 +28,8 @@
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuButton" aria-expanded="false">
-                    <i class="icons icon-currency" id="currencyIcons"></i><span id="currencyText">IDR</span>
+                    <i class="icons icon-currency" id="currencyIconSidebar"></i><span
+                        id="currencyTextSidebar">IDR</span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <li><a class="dropdown-item" href="#" data-currency="SGD">SGD</a></li>
@@ -61,11 +62,11 @@
                     <li class="dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="currencyDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="icons icon-currency" id="currencyIcons"></i> <span id="currencyText">IDR</span>
+                            <i class="icons icon-currency" id="currencyIcon"></i> <span id="currencyText">IDR</span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="currencyDropdown">
                             <li>
-                                <a class="dropdown-item" href="#" data-currency="IDR"><i
+                                <a class="dropdown-item" href="#" data-currency="SGD"><i
                                         class="icons icon-currency"></i> SGD </a>
                             </li>
                             <li>
