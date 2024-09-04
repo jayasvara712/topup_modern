@@ -119,7 +119,7 @@
                                 <div class="payment-box">
                                     <div class="title">Virtual Account</div>
                                     <div class="img-payment">
-                                        <img src="/assets/img/payment/bank- bri-icon.png" alt="">
+                                        <img src="/assets/img/payment/bank-bri-icon.png" alt="">
                                     </div>
                                 </div>
                             </div>
