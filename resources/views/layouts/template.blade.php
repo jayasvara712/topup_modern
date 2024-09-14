@@ -182,9 +182,9 @@
                     <h4 class="footer-title"><span class="footer-title-bar">&nbsp;</span>Information</h4>
                     <ul class="footer-links">
                         <li><a href="#">About Us</a></li>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Legal</a></li>
+                        <li><a href="/terms">Terms & Conditions</a></li>
+                        <li><a href="/terms">Privacy Policy</a></li>
+                        <li><a href="/terms">Legal</a></li>
                     </ul>
                 </div>
                 <!-- User Support Column -->
